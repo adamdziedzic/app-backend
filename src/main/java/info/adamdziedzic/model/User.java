@@ -1,8 +1,6 @@
 package info.adamdziedzic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,9 +9,12 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "user_group")
-public class Group {
+@Setter
+@Builder
+public class User {
+
     @Id @GeneratedValue(strategy = GenerationType.AUTO) private Long id;
-    private String name;
-    @ManyToMany private List<MenuItem> menuItems;
+    private String username;
+    private String password;
+    @ManyToMany private List<Group> groups;
 }

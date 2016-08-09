@@ -4,9 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @AllArgsConstructor
 public class Menu {
-    private ArrayList<MenuItem> menuItems;
+    private List<MenuItem> menuItems;
 }
