@@ -2,9 +2,7 @@ package info.adamdziedzic.controller;
 
 import com.google.common.collect.Lists;
 import info.adamdziedzic.model.*;
-import info.adamdziedzic.network.response.AddMenuItemResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.ws.rs.QueryParam;
@@ -35,6 +33,11 @@ public class MenuController {
     public @ResponseBody String addMenuItem(@RequestBody MenuItem request) {
         repository.save(request);
         return "success";
+    }
+
+    @RequestMapping(value = "/menu/all", method = RequestMethod.GET)
+    public @ResponseBody Menu getAllMenuItems() {
+        return new Menu(Lists.newArrayList(repository.findAll()));
     }
 
 }
