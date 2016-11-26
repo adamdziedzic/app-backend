@@ -1,9 +1,7 @@
-package info.adamdziedzic.controller;
+package info.adamdziedzic.domain.group;
 
 import com.google.common.collect.Lists;
-import info.adamdziedzic.model.Group;
-import info.adamdziedzic.model.GroupRepository;
-import info.adamdziedzic.model.MenuRepository;
+import info.adamdziedzic.domain.menu.MenuRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

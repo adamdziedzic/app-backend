@@ -1,5 +1,6 @@
-package info.adamdziedzic.model;
+package info.adamdziedzic.domain.user;
 
+import info.adamdziedzic.domain.group.Group;
 import lombok.*;
 
 import javax.persistence.*;

@@ -1,9 +1,7 @@
-package info.adamdziedzic.controller;
+package info.adamdziedzic.domain.user;
 
-import info.adamdziedzic.model.Group;
-import info.adamdziedzic.model.GroupRepository;
-import info.adamdziedzic.model.User;
-import info.adamdziedzic.model.UserRepository;
+import info.adamdziedzic.domain.group.Group;
+import info.adamdziedzic.domain.group.GroupRepository;
 import info.adamdziedzic.network.request.AddGroupRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;

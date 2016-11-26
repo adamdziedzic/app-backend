@@ -1,4 +1,4 @@
-package info.adamdziedzic.controller;
+package info.adamdziedzic.domain.user;
 
 import info.adamdziedzic.network.response.LoginResponse;
 import org.springframework.web.bind.annotation.RequestMapping;

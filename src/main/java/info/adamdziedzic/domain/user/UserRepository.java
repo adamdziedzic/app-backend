@@ -1,4 +1,4 @@
-package info.adamdziedzic.model;
+package info.adamdziedzic.domain.user;
 
 import org.springframework.data.repository.CrudRepository;
 

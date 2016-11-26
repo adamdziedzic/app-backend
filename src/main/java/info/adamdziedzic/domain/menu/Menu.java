@@ -1,9 +1,8 @@
-package info.adamdziedzic.model;
+package info.adamdziedzic.domain.menu;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Getter

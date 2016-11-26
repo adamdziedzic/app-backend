@@ -1,19 +1,21 @@
-package info.adamdziedzic.model;
+package info.adamdziedzic.domain.news;
 
+import info.adamdziedzic.domain.menu.MenuItem;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "user_group")
-public class Group {
+@Setter
+public class News {
     @Id @GeneratedValue(strategy = GenerationType.AUTO) private Long id;
-    private String name;
-    @ManyToMany private List<MenuItem> menuItems;
+    private String title;
+    private String content;
+    @ManyToOne private MenuItem category;
 }
